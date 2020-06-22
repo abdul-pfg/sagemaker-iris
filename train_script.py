@@ -20,10 +20,10 @@ def train():
         #print('create SKlearn obj')
         
         proxy = os.environ.get('PROXY')
-        os.environ['http_proxy'] = proxy 
-        os.environ['HTTP_PROXY'] = proxy
-        os.environ['https_proxy'] = proxy
-        os.environ['HTTPS_PROXY'] = proxy
+        #os.environ['http_proxy'] = proxy 
+        #os.environ['HTTP_PROXY'] = proxy
+        #os.environ['https_proxy'] = proxy
+        #os.environ['HTTPS_PROXY'] = proxy
         
         aws_sklearn = SKLearn(entry_point='sklearn-iris-main.py',
                             source_dir='s3://aws-sagemaker-iris-us-east-2-304472691870/sklearn-iris-main.py.tar.gz',
