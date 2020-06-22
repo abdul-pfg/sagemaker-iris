@@ -33,6 +33,7 @@ def train():
         #Call the fit method on SKlearn estimator which uses our python script to train the model
         
         print('run fit method')
+       
         aws_sklearn.fit({'train':'s3://aws-sagemaker-iris-us-east-2-304472691870/train'})
 
         #Deploy the model created in previous step and create an endpoint
