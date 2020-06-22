@@ -46,7 +46,6 @@ def train():
     else:
         return 'success'
 
-
 if __name__ =='__main__':
     train()
 
