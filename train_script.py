@@ -40,8 +40,8 @@ def train():
         aws_sklearn_predictor = aws_sklearn.deploy(instance_type='ml.m4.xlarge', 
                                                 initial_instance_count=1)
 
-    except:
-        return 'Something went wrong'
+    except Exception as e:
+        return e
     else:
         return 'success'
 
